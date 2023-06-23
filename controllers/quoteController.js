@@ -3,7 +3,6 @@ const Quote = require("../models/quote");
 const QuoteController = {
   getQuotes: async (req, res) => {
     try {
-      console.log("called");
       const page = parseInt(req.query.page) || 1;
       const limit = parseInt(req.query.limit) || 10;
 
